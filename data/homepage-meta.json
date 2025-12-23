@@ -1,1 +1,87 @@
-
+{
+  "site_name": "Everything To Gain",
+  "primary_url": "https://everythingtogain.com/",
+  "last_updated": "2025-12-23",
+  "core_value_proposition": "Extended sales, marketing, and operations team that turns chaos into scalable process.",
+  "stats": {
+    "speed_gap": "840%",
+    "skill_gap": "700%",
+    "annual_waste": "$60M",
+    "manual_hours_eliminated": 80000,
+    "team_experience_years": 350,
+    "client_satisfaction": "940%"
+  },
+  "founders": [
+    "Michael Cofone",
+    "Willem Butler"
+  ],
+  "process_stages": [
+    "Manual chaos",
+    "Paper trails",
+    "Status reports",
+    "Documentation",
+    "Automation",
+    "Autonomy",
+    "Handshakes",
+    "Typed memos",
+    "CRM adoption",
+    "Real-time data",
+    "Predictive insights"
+  ],
+  "services_framework": {
+    "marketing": "Automate campaign workflows and centralize reporting.",
+    "sales": "Clean routing, minimal manual entry, CRM as growth engine.",
+    "recruiting": "Frictionless hiring flows and faster decision loops.",
+    "operations": "Standardized SOPs, automated handoffs, aligned finance ops."
+  },
+  "tool_expertise": [
+    "HubSpot Implementation Partner",
+    "Salesforce data governance + interface design",
+    "Google Ads management for pipeline growth"
+  ],
+  "industry_examples": [
+    {
+      "client": "ConDecor",
+      "outcome": "Unified sales/marketing framework, automated lead tracking, faster follow-ups."
+    },
+    {
+      "client": "Interstaff",
+      "outcome": "Connected job ads, lead forms, and candidate workflows for faster placements."
+    },
+    {
+      "client": "Better Business Bureau",
+      "outcome": "Custom bi-directional sync between HubSpot and legacy CRM."
+    },
+    {
+      "client": "Brick & mortar",
+      "outcome": "Aligned sales and marketing pipelines, resolving sync issues."
+    },
+    {
+      "client": "Nonprofits",
+      "outcome": "Connected marketing, event, and donor data for accurate reporting."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Willem and Michael are hands-on, reliable, and sharp—our extended team for over a year.",
+      "person": "Jon Polenz",
+      "title": "CEO",
+      "company": "OwnerCo"
+    },
+    {
+      "quote": "Tailored online marketing campaigns delivered noticeable foot-traffic gains.",
+      "person": "Karen C.",
+      "title": "President",
+      "company": "ConDecor"
+    }
+  ],
+  "contact": {
+    "email": "support@everythingtogain.com",
+    "sla_hours": 24
+  },
+  "legal": {
+    "terms_of_service": "https://everythingtogain.com/legal",
+    "copyright": "© 2025 ScaleMail Inc.",
+    "built_by": "kuartz studio"
+  }
+}
