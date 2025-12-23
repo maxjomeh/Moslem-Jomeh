@@ -1,87 +1,48 @@
 {
-  "site_name": "Everything To Gain",
-  "tagline": "Extended sales, marketing, recruiting, and operations team.",
-  "primary_url": "https://everythingtogain.com/",
-  "last_updated": "2025-12-23",
-  "navigation": [
-    {"label": "Services", "url": "https://everythingtogain.com/services"},
-    {"label": "Industries", "url": "https://everythingtogain.com/industries"},
-    {"label": "Clients", "url": "https://everythingtogain.com/case-studies"},
-    {"label": "About", "url": "https://everythingtogain.com/about-us"}
-    ],
-  "core_value_proposition": "ETG plugs in as an extended RevOps team to streamline workflows, integrate tech stacks, and scale smarter with AI-ready insights.",
-  "stats": {
-    "speed_gap": "840%",
-    "skill_gap": "700%",
-    "annual_waste": "$60M",
-    "manual_hours_eliminated": 80000,
-    "team_experience_years": 350,
-    "client_satisfaction": "940%"
+  "site": "Everything to Gain",
+  "tagline": "Systems, Automation & AI Implementation",
+  "metrics": {
+    "hoursEliminated": 80000,
+    "wasteRecoveredUSD": 60000000,
+    "satisfactionPercent": 940
   },
-  "founders": ["Michael Cofone", "Willem Butler"],
-  "process_stages": [
-    "Manual chaos",
-    "Paper trails",
-    "Status reports",
-    "Documentation",
-    "Automation",
-    "Autonomy",
-    "Handshakes",
-    "Typed memos",
-    "CRM adoption",
-    "Real-time data",
-    "Predictive insights"
+  "leaders": [
+    "Michael Cofone",
+    "Willem Butler"
   ],
-  "services": {
-    "marketing": "Automate campaign workflows, align channels, centralize reporting.",
-    "sales": "CRM as a growth engine: clean routing, minimal manual entry, accurate forecasts.",
-    "recruiting": "Sync job ads, lead forms, and ATS stages to accelerate hiring decisions.",
-    "operations": "Standardize SOPs, automate handoffs, align finance and fulfillment data."
-  },
-  "tool_expertise": [
-    "HubSpot Implementation Partner",
-    "Salesforce governance and interface design",
-    "Google Ads programs for pipeline impact"
+  "clients": [
+    "ConDecor",
+    "Interstaff",
+    "Better Business Bureau"
   ],
-  "industry_examples": [
-    {"organization": "ConDecor", "result": "Unified sales/marketing framework, automated lead tracking, faster follow-ups."},
-    {"organization": "Interstaff", "result": "Connected job ads, lead forms, and candidate workflows for quicker placements."},
-    {"organization": "Better Business Bureau", "result": "Custom bi-directional sync between HubSpot and legacy CRM."},
-    {"organization": "Brick & mortar brands", "result": "Synced campaigns and pipelines for retail locations."},
-    {"organization": "Nonprofits", "result": "Connected marketing, event, and donor data for reliable reporting."}
+  "process": [
+    "Manual Chaos",
+    "Introduce Process",
+    "Adopt Tools",
+    "Connect Systems",
+    "Unlock with AI"
   ],
-  "testimonials": [
-    {
-      "quote": "Willem and Michael are hands-on, reliable, and sharp—our extended team for over a year.",
-      "name": "Jon Polenz",
-      "title": "CEO",
-      "company": "OwnerCo"
-    },
-    {
-      "quote": "Tailored online marketing campaigns delivered noticeable foot-traffic gains.",
-      "name": "Karen C.",
-      "title": "President",
-      "company": "ConDecor"
-    }
+  "expertise": [
+    "HubSpot Certified Partner",
+    "Salesforce automation",
+    "Google Ads orchestration"
   ],
-  "methodology": ["Research", "Launch", "Expansion", "Leverage"],
-  "contact": {
-    "email": "support@everythingtogain.com",
-    "sla_hours": 24
-  },
-  "legal": {
-    "terms_url": "https://everythingtogain.com/legal",
-    "copyright_owner": "© 2025 ScaleMail Inc.",
-    "built_by": "kuartz studio"
-  },
   "faq": [
     {
-      "question": "What services do you offer?",
-      "answer": "C’est un service qui permet de créer des FAQ avec génération automatique du JSON-LD pour le SEO."
+      "question": "What makes your approach different?",
+      "answer": "We are operators before consultants, pairing diagnostics with full execution."
     },
     {
-      "question": "How fast do you reply?",
-      "answer": "Support answers every request within 24 hours."
+      "question": "Do you only work with HubSpot?",
+      "answer": "No. We integrate Salesforce, HubSpot, hybrid stacks, and custom data layers."
+    },
+    {
+      "question": "Timeline to see value?",
+      "answer": "Most programs show measurable gains within the first 30–45 days."
+    },
+    {
+      "question": "Is there a pre-built FAQ service?",
+      "answer": "Yes, we provide structured FAQ generation with JSON-LD for SEO."
     }
   ]
 }
