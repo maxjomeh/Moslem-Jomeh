@@ -1,110 +1,252 @@
-/* =========================================================
-   WORKING EXPERIENCES — HARD OVERRIDE
-   Paste at the VERY END of style.css
-   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
 
-#working-experiences .cards-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
-  gap: 18px !important;
-  align-items: stretch !important;
+:root {
+  --bg: #06040b;
+  --card: #11101a;
+  --accent: #f1ff6b;
+  --accent-soft: #9cf6ff;
+  --muted: #a8a7b4;
+  --text: #f7f7fb;
+  --border: rgba(255, 255, 255, 0.08);
 }
 
-#working-experiences .cards-grid > * {
-  min-width: 0 !important; /* critical: prevents overflow forcing wraps */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#working-experiences .card,
-#working-experiences .experience-card {
-  background: #fff !important;
-  border: 1px solid rgba(0,0,0,0.08) !important;
-  border-radius: 14px !important;
-  padding: 18px !important;
-  overflow: hidden !important;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06) !important;
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: radial-gradient(circle at top, #111122 0%, var(--bg) 45%);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 2rem clamp(1.5rem, 5vw, 6rem) 4rem;
 }
 
-/* Header row: logo + name on one line */
-#working-experiences .company-header {
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-  margin: 0 0 12px 0 !important;
-
-  /* prevents logo/title from jumping around due to template defaults */
-  width: 100% !important;
-  min-width: 0 !important;
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
-/* White logo box */
-#working-experiences .company-logo-wrapper {
-  width: 34px !important;
-  height: 34px !important;
-  flex: 0 0 34px !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  background: #fff !important;
-  border: 1px solid rgba(0,0,0,0.08) !important;
-  border-radius: 10px !important;
-  overflow: hidden !important;
+.hero__content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 
-/* The logo image itself — stop global img rules from blowing it up */
-#working-experiences img.company-logo {
-  width: 22px !important;
-  height: 22px !important;
-  max-width: 22px !important;
-  max-height: 22px !important;
-
-  object-fit: contain !important;
-  display: block !important;
-
-  /* these two kill the classic "img { width:100% }" template issue */
-  flex: 0 0 auto !important;
+.subtitle {
+  color: var(--muted);
+  max-width: 32rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Company name — force it to stay on the same line */
-#working-experiences .company-name {
-  margin: 0 !important;
-  padding: 0 !important;
-
-  font-size: 1.05rem !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
-
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
+.eyebrow {
+  color: var(--accent-soft);
+  letter-spacing: 0.28em;
+  font-size: 0.75rem;
+  margin-bottom: 0.8rem;
 }
 
-/* Role/meta/bullets — normalize spacing */
-#working-experiences .role-title {
-  margin: 0 0 6px 0 !important;
-  font-weight: 700 !important;
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-#working-experiences .role-meta {
-  margin: 0 0 12px 0 !important;
-  opacity: 0.75 !important;
-  font-size: 0.95rem !important;
+.btn {
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease;
+  text-align: center;
 }
 
-#working-experiences .experience-bullets {
-  margin: 0 !important;
-  padding-left: 18px !important;
+.btn.primary {
+  background: linear-gradient(120deg, var(--accent), #ffc3a0);
+  color: #121212;
 }
 
-#working-experiences .experience-bullets li {
-  margin: 0 0 8px 0 !important;
+.btn.ghost {
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
-/* Mobile tweaks */
-@media (max-width: 768px) {
-  #working-experiences .cards-grid {
-    grid-template-columns: repeat(auto-fit, min
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero__card {
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.15), transparent 70%),
+    var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 2rem;
+  min-height: 240px;
+}
+
+.card-label {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+.meter {
+  margin: 1.5rem 0;
+  background: #0b0a12;
+  border-radius: 999px;
+  height: 14px;
+  position: relative;
+  border: 1px solid var(--border);
+}
+
+.dial {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(241, 255, 107, 0.35);
+}
+
+.card-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.module {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.module-label {
+  color: var(--accent-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+}
+
+.module h3 {
+  font-size: 1.4rem;
+}
+
+.text-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.learn {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(156, 246, 255, 0.08), rgba(241, 255, 107, 0.05));
+  margin-bottom: 4rem;
+}
+
+.learn__panel {
+  background: rgba(17, 16, 26, 0.8);
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+
+.learn__panel h4 {
+  margin-bottom: 1rem;
+}
+
+.learn__panel ul {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  color: var(--muted);
+}
+
+.newsletter {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.newsletter input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.9rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #0c0b14;
+  color: var(--text);
+}
+
+.newsletter button {
+  background: var(--accent);
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.testimonials article {
+  padding: 2rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.quote {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.author {
+  color: var(--muted);
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 1rem;
+}
